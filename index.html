@@ -3,97 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vikas - Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('https://github.com/vikas9240/website/blob/main/_5d58cfcd-024d-4214-afc3-bc372201151d.jpeg?raw=true') center/cover no-repeat fixed;
-            color: #fff;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 1rem;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        nav {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 0.5rem 0;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 1rem;
-        }
-
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <p>Discover my amazing work and projects</p>
+        <nav>
+            <div class="container">
+                <div id="logo">
+                    <img src="github-logo.png" alt="GitHub Logo">
+                </div>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello, I'm Vikas! This is a brief introduction about me. You can write more about your background, skills, and interests here.
-        </p>
+        <div class="container">
+            <h1>About Me</h1>
+            <p>
+                Introduce yourself here. You can include a brief overview of your skills and background.
+            </p>
+        </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>
-            Click <a href="portfolio.html">here</a> to explore my portfolio.
-        </p>
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div id="left-subsection">
+                <h3>Education</h3>
+                <p>University Name - Degree - Year</p>
+                <!-- Add more education details here -->
+
+                <h3>Work Experience</h3>
+                <p>Company Name - Position - Year</p>
+                <!-- Add more work experience details here -->
+            </div>
+
+            <div id="right-subsection">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Web Development</li>
+                    <!-- Add more skills here -->
+                </ul>
+
+                <h3>Certifications</h3>
+                <p>Certification Name - Year</p>
+                <!-- Add more certification details here -->
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <p>
-            Click <a href="projects.html">here</a> to view my projects.
-        </p>
-    </section>
+        <div class="container">
+            <h2>Projects and Blogs</h2>
+            <div id="left-subsection">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li>
+                    <!-- Add more project links here -->
+                </ul>
+            </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            Feel free to reach out to me. You can provide your contact information and how you prefer to be contacted.
-        </p>
+            <div id="right-subsection">
+                <h3>Blogs</h3>
+                <ul>
+                    <li><a href="#">Blog 1</a></li>
+                    <li><a href="#">Blog 2</a></li>
+                    <!-- Add more blog links here -->
+                </ul>
+            </div>
+        </div>
     </section>
-
-    <footer>
-        <p>&copy; 2023 Vikas</p>
-    </footer>
 </body>
 </html>
